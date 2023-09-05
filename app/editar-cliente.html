@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://kit.fontawesome.com/8ad2738107.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-slate-600 font-roboto">
+    <main class="flex justify-center items-center h-screen">
+        <section class=" p-3 rounded-lg text-white w-full">
+            <form>
+                <legend class="text-center font-extrabold text-xl text-blue-500">Editar Cliente</legend>
+                <fieldset class="flex justify-center flex-col items-center">
+                    <div class="mb-2 w-2/5">
+                        <label class="block text-sm" for="nome">Nome</label>
+                        <input class="bg-slate-700 w-full p-2 text-lg rounded-md outline-none" type="text" id="nome" data-nome="" required>
+                    </div>
+                    <div class="mb-2 w-2/5">
+                        <label class="block text-sm" for="email">E-Mail</label>
+                        <input class="bg-slate-700 w-full p-2 text-lg rounded-md outline-none" type="email" id="email" data-email="" required>
+                    </div>
+                    <div class="w-full flex justify-center mt-4">
+                        <input class="bg-blue-500 p-2 shadow-md rounded-lg w-[200px] text-lg hover:bg-blue-600 transition-all cursor-pointer" type="submit" value="Editar" data-btn="">
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <script type="module" src="services/edit-cliente.js"></script>
+</body>
+</html>
